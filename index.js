@@ -60,8 +60,8 @@ const record = [
     { year: "1960", result: "N/A"}
   ]
   function superbowlWin(record) {
-    let win = record.find(function(obj) {
-        return obj.result === "W";
+    let win = record.find(function(winOrLoss) {
+        return winOrLoss.result === "W";
     });
 
     if (win) {
